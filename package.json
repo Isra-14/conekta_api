@@ -1,0 +1,34 @@
+{
+  "name": "bonanza_payment",
+  "version": "1.0.0",
+  "description": "Modulo de pago para la aplicacion de Bonanza utilizando la API de Conekta",
+  "main": "index.js",
+  "scripts": {
+    "test": "SET NODE_ENV=test&& mocha --exit --recursive --timeout 10000",
+    "dev": "SET NODE_ENV=development&& nodemon server.js",
+    "sync_db": "SET NODE_ENV=development&& SET DB_SYNC=true&& npm run start",
+    "start": "node server.js"
+  },
+  "author": "Rodrigo Sebastian de la Rosa Andres",
+  "license": "ISC",
+  "dependencies": {
+    "api": "^6.1.1",
+    "axios": "^1.5.1",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "json-api-serializer": "^2.6.6",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.6.1",
+    "nodemon": "^3.0.1",
+    "sequelize": "^6.33.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "chai-http": "^4.4.0",
+    "mocha": "^10.2.0"
+  }
+}
